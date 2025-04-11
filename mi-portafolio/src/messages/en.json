@@ -1,0 +1,74 @@
+{
+  "Home": {
+    "title": "Hi, I'm Oscar",
+    "subtitle": "I build things with code.",
+    "cta": "View projects",
+    "scroll": "Scroll to explore"
+  },
+  "Layout": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "Projects": {
+    "title": "Projects",
+    "list": [
+      {
+        "name": "Nowya",
+        "description": "Full-stack SaaS built from scratch. Design, backend and frontend by me.",
+        "details": "Nowya is a fully-featured SaaS product for event-based notifications and user management. I designed and developed everything from database architecture to UI components.",
+        "role": "Founder & full-stack developer (solo dev)",
+        "stack": [
+          "Next.js",
+          "NestJS",
+          "PostgreSQL",
+          "Tailwind",
+          "Redis",
+          "Zod",
+          "Docker"
+        ],
+        "image": "/projects/nowya.png",
+        "gallery": [
+          "/projects/nowya/image1.png",
+          "/projects/nowya/image2.jpeg",
+          "/projects/nowya/image3.png"
+        ],
+        "link": "https://www.nowya.mx"
+      },
+      {
+        "name": "VoluntRed",
+        "description": "Platform connecting volunteers and NGOs. Built for social good.",
+        "details": "I developed both the frontend and backend of this platform to help NGOs manage volunteers and campaigns. Focused on accessibility and speed.",
+        "role": "Full-stack developer",
+        "stack": ["Next.js", "Firebase", "Tailwind", "Shadcn", "Framer Motion"],
+        "image": "/projects/voluntred.png",
+        "gallery": ["/projects/voluntred-1.png", "/projects/voluntred-2.png"],
+        "link": "https://www.voluntred.com/"
+      },
+      {
+        "name": "EVA Protect",
+        "description": "Firmware, DevOps and device streaming for a security system startup.",
+        "details": "Led the embedded systems development and cloud infrastructure for a scalable, real-time camera monitoring solution using ESP32-CAM and AWS.",
+        "role": "Co-founder & engineer (firmware + cloud)",
+        "stack": ["ESP32", "AWS", "Docker", "FFmpeg", "MQTT", "Node.js"],
+        "image": "/projects/eva.jpeg",
+        "gallery": ["/projects/eva-1.png", "/projects/eva-2.png"],
+        "link": "https://www.evaprotect.com/"
+      },
+      {
+        "name": "Fithub",
+        "description": "Fitness tracking app in React Native, inspired by MyFitnessPal.",
+        "details": "Developed a mobile app to track calories, workouts, and weight progress. Local storage with SQLite for offline support.",
+        "role": "Mobile developer",
+        "stack": ["React Native", "Expo", "SQLite", "NativeWind"],
+        "image": "/projects/fithub.png",
+        "gallery": ["/projects/fithub-1.png", "/projects/fithub-2.png"]
+      }
+    ],
+    "seeMore": "See more",
+    "role": "My role",
+    "stack": "Stack",
+    "visitProject": "Visit project"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "Home": {
+    "title": "Hola, soy Oscar",
+    "subtitle": "Construyo cosas con código.",
+    "cta": "Ver proyectos",
+    "scroll": "Desliza para explorar"
+  },
+  "Layout": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "about": "Sobre mí",
+    "contact": "Contacto"
+  },
+  "Projects": {
+    "title": "Proyectos",
+    "list": [
+      {
+        "name": "Nowya",
+        "description": "SaaS full-stack construido desde cero. Diseño, backend y frontend hechos por mí.",
+        "details": "Nowya es un SaaS completo para notificaciones y gestión de usuarios. Diseñado y desarrollado por mí: arquitectura, API y UI.",
+        "role": "Fundador y desarrollador full-stack (dev único)",
+        "stack": [
+          "Next.js",
+          "NestJS",
+          "PostgreSQL",
+          "Tailwind",
+          "Redis",
+          "Zod",
+          "Docker"
+        ],
+        "image": "/projects/nowya.png",
+        "gallery": [
+          "/projects/nowya/image1.png",
+          "/projects/nowya/image2.jpeg",
+          "/projects/nowya/image3.png"
+        ],
+        "link": "https://www.nowya.mx"
+      },
+      {
+        "name": "VoluntRed",
+        "description": "Plataforma que conecta voluntarios con ONGs. Creada con fines sociales.",
+        "details": "Desarrollé el frontend y backend para facilitar la gestión de campañas y voluntarios. Enfocada en accesibilidad y rendimiento.",
+        "role": "Desarrollador full-stack",
+        "stack": ["Next.js", "Firebase", "Tailwind", "Shadcn", "Framer Motion"],
+        "image": "/projects/voluntred.png",
+        "gallery": ["/projects/voluntred-1.png", "/projects/voluntred-2.png"],
+        "link": "https://www.voluntred.com/"
+      },
+      {
+        "name": "EVA Protect",
+        "description": "Firmware, DevOps y transmisión de dispositivos para una startup de seguridad.",
+        "details": "Lideré el desarrollo de firmware y la infraestructura cloud para monitoreo en tiempo real con ESP32-CAM y AWS.",
+        "role": "Cofundador e ingeniero (firmware + cloud)",
+        "stack": ["ESP32", "AWS", "Docker", "FFmpeg", "MQTT", "Node.js"],
+        "image": "/projects/eva.jpeg",
+        "gallery": ["/projects/eva-1.png", "/projects/eva-2.png"],
+        "link": "https://www.evaprotect.com/"
+      },
+      {
+        "name": "Fithub",
+        "description": "App de seguimiento fitness en React Native, inspirada en MyFitnessPal.",
+        "details": "Desarrollé una app móvil para registrar calorías, entrenamientos y peso. Almacenamiento local con SQLite.",
+        "role": "Desarrollador móvil",
+        "stack": ["React Native", "Expo", "SQLite", "NativeWind"],
+        "image": "/projects/fithub.png",
+        "gallery": ["/projects/fithub-1.png", "/projects/fithub-2.png"]
+      }
+    ],
+    "seeMore": "Ver más",
+    "role": "Mi rol",
+    "stack": "Tecnologías",
+    "visitProject": "Ir al proyecto"
+  }
+}
