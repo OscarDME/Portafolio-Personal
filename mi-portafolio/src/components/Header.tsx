@@ -43,9 +43,9 @@ export default function Header() {
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/projects" className="text-black hover:opacity-80 transition">
-                {t('projects')}
-              </Link>
+            <a href="#projects" className="text-black hover:opacity-80 transition">
+              {t('projects')}
+            </a>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <Link href="/about" className="text-black hover:opacity-80 transition">

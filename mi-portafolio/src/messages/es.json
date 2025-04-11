@@ -13,26 +13,35 @@
   },
   "Projects": {
     "title": "Proyectos",
+    "viewProject": "Ver proyecto",
     "list": [
       {
         "name": "Nowya",
-        "description": "SaaS full-stack construido desde cero. Diseño, backend y frontend hechos por mí.",
-        "details": "Nowya es un SaaS completo para notificaciones y gestión de usuarios. Diseñado y desarrollado por mí: arquitectura, API y UI.",
-        "role": "Fundador y desarrollador full-stack (dev único)",
+        "description": "Plataforma de reservas tipo Airbnb para belleza, salud y mascotas.",
+        "details": "Nowya es un sistema B2B2C donde los usuarios pueden agendar citas en barberías, spas, consultorios médicos o veterinarias. Ofrece interfaces tanto para clientes como para negocios. Desarrollada con Next.js, Shadcn y Tailwind en frontend, y un backend con microservicios en NestJS. Implementa notificaciones por WhatsApp vía Twilio y corre sobre infraestructura AWS.",
+        "role": "Desarrollador full-stack y co-founder (dev principal backend, DevOps y frontend de la plataforma administrativa)",
         "stack": [
           "Next.js",
+          "Shadcn",
+          "Tailwind",
           "NestJS",
           "PostgreSQL",
-          "Tailwind",
           "Redis",
-          "Zod",
+          "Twilio",
+          "AWS",
           "Docker"
         ],
         "image": "/projects/nowya.png",
         "gallery": [
           "/projects/nowya/image1.png",
           "/projects/nowya/image2.jpeg",
-          "/projects/nowya/image3.png"
+          "/projects/nowya/image2.png",
+          "/projects/nowya/image3.png",
+          "/projects/nowya/image4.png",
+          "/projects/nowya/image5.png",
+          "/projects/nowya/image6.png",
+          "/projects/nowya/image7.png",
+          "/projects/nowya/image8.png"
         ],
         "link": "https://www.nowya.mx"
       },
@@ -70,5 +79,28 @@
     "role": "Mi rol",
     "stack": "Tecnologías",
     "visitProject": "Ir al proyecto"
+  },
+  "About": {
+    "title": "Sobre mí",
+    "intro": "Soy un desarrollador apasionado por construir productos útiles con tecnología. Me gusta crear soluciones eficientes, escalables y centradas en el usuario.",
+    "techTitle": "Stack tecnológico",
+    "eduTitle": "Educación",
+    "stack": [
+      "Next.js",
+      "NestJS",
+      "TypeScript",
+      "Tailwind",
+      "React Native",
+      "Docker",
+      "PostgreSQL",
+      "AWS"
+    ],
+    "education": [
+      {
+        "title": "Ingeniería en Computación",
+        "institution": "CUCEI - Universidad de Guadalajara",
+        "year": "2020 - Actualidad"
+      }
+    ]
   }
 }

@@ -13,26 +13,35 @@
   },
   "Projects": {
     "title": "Projects",
+    "viewProject": "View project",
     "list": [
       {
         "name": "Nowya",
-        "description": "Full-stack SaaS built from scratch. Design, backend and frontend by me.",
-        "details": "Nowya is a fully-featured SaaS product for event-based notifications and user management. I designed and developed everything from database architecture to UI components.",
-        "role": "Founder & full-stack developer (solo dev)",
+        "description": "B2B2C booking platform like Airbnb for beauty, health and pet services.",
+        "details": "Nowya is a B2B2C platform where users can book appointments at barbershops, spas, clinics or veterinary services. It includes public pages for customers and dashboards for businesses to manage bookings and view analytics. Built with Next.js, Shadcn and Tailwind on the frontend, and a microservices backend with NestJS. Integrates WhatsApp notifications via Twilio and runs entirely on AWS.",
+        "role": "Full-stack developer and co-creator (lead on backend, DevOps and admin platform frontend)",
         "stack": [
           "Next.js",
+          "Shadcn",
+          "Tailwind",
           "NestJS",
           "PostgreSQL",
-          "Tailwind",
           "Redis",
-          "Zod",
+          "Twilio",
+          "AWS",
           "Docker"
         ],
         "image": "/projects/nowya.png",
         "gallery": [
           "/projects/nowya/image1.png",
           "/projects/nowya/image2.jpeg",
-          "/projects/nowya/image3.png"
+          "/projects/nowya/image2.png",
+          "/projects/nowya/image3.png",
+          "/projects/nowya/image4.png",
+          "/projects/nowya/image5.png",
+          "/projects/nowya/image6.png",
+          "/projects/nowya/image7.png",
+          "/projects/nowya/image8.png"
         ],
         "link": "https://www.nowya.mx"
       },
@@ -41,7 +50,7 @@
         "description": "Platform connecting volunteers and NGOs. Built for social good.",
         "details": "I developed both the frontend and backend of this platform to help NGOs manage volunteers and campaigns. Focused on accessibility and speed.",
         "role": "Full-stack developer",
-        "stack": ["Next.js", "Firebase", "Tailwind", "Shadcn", "Framer Motion"],
+        "stack": ["Next.js", "Firebase", "Tailwind", "Shadcn", "Flutter"],
         "image": "/projects/voluntred.png",
         "gallery": ["/projects/voluntred-1.png", "/projects/voluntred-2.png"],
         "link": "https://www.voluntred.com/"
@@ -51,7 +60,7 @@
         "description": "Firmware, DevOps and device streaming for a security system startup.",
         "details": "Led the embedded systems development and cloud infrastructure for a scalable, real-time camera monitoring solution using ESP32-CAM and AWS.",
         "role": "Co-founder & engineer (firmware + cloud)",
-        "stack": ["ESP32", "AWS", "Docker", "FFmpeg", "MQTT", "Node.js"],
+        "stack": ["ESP32", "AWS", "Docker", "ESP-IDF", "MQTT", "Node.js", "Express.js"],
         "image": "/projects/eva.jpeg",
         "gallery": ["/projects/eva-1.png", "/projects/eva-2.png"],
         "link": "https://www.evaprotect.com/"
@@ -61,7 +70,7 @@
         "description": "Fitness tracking app in React Native, inspired by MyFitnessPal.",
         "details": "Developed a mobile app to track calories, workouts, and weight progress. Local storage with SQLite for offline support.",
         "role": "Mobile developer",
-        "stack": ["React Native", "Expo", "SQLite", "NativeWind"],
+        "stack": ["React Native", "Expo", "SQL Server", "NativeWind", "Azure", "React.js"],
         "image": "/projects/fithub.png",
         "gallery": ["/projects/fithub-1.png", "/projects/fithub-2.png"]
       }
@@ -70,5 +79,28 @@
     "role": "My role",
     "stack": "Stack",
     "visitProject": "Visit project"
+  },
+  "About": {
+    "title": "About me",
+    "intro": "I'm a developer passionate about building useful products with technology. I enjoy creating efficient, scalable, and user-centered solutions.",
+    "techTitle": "Tech Stack",
+    "eduTitle": "Education",
+    "stack": [
+      "Next.js",
+      "NestJS",
+      "TypeScript",
+      "Tailwind",
+      "React Native",
+      "Docker",
+      "PostgreSQL",
+      "AWS"
+    ],
+    "education": [
+      {
+        "title": "Computer Engineering",
+        "institution": "CUCEI - University of Guadalajara",
+        "year": "2020 - Present"
+      }
+    ]
   }
 }

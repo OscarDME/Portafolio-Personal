@@ -11,6 +11,7 @@ import {
 import { Button } from '@/components/ui/button'
 import { useState } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { Project } from '@/types'
 
@@ -19,6 +20,7 @@ interface ProjectModalProps {
 }
 
 export default function ProjectModal({ project }: ProjectModalProps) {
+  const t = useTranslations('Projects')
   const [current, setCurrent] = useState(0)
   const gallery = project.gallery || []
 
@@ -30,18 +32,22 @@ export default function ProjectModal({ project }: ProjectModalProps) {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="outline" className="mt-2">
-          Ver más
+        <Button
+          variant="outline"
+          className="text-sm text-blue-800 border-blue-300 hover:bg-blue-100"
+        >
+          {t('seeMore')}
         </Button>
       </DialogTrigger>
 
-      <DialogContent className="max-w-2xl">
+
+      <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold">{project.name}</DialogTitle>
           <DialogDescription className="text-blue-800">{project.description}</DialogDescription>
         </DialogHeader>
 
-        {/* Carrusel de imágenes */}
+        {/* Imagen principal con flechas */}
         {gallery.length > 0 && (
           <div className="mt-4 relative">
             <div className="w-full h-60 relative rounded-md overflow-hidden">
@@ -63,6 +69,28 @@ export default function ProjectModal({ project }: ProjectModalProps) {
                 <ChevronRight />
               </Button>
             </div>
+          </div>
+        )}
+
+        {/* Miniaturas debajo */}
+        {gallery.length > 1 && (
+          <div className="mt-4 flex gap-2 overflow-x-auto pb-2">
+            {gallery.map((thumb, index) => (
+              <div
+                key={index}
+                onClick={() => setCurrent(index)}
+                className={`relative w-16 h-16 flex-shrink-0 rounded-md cursor-pointer border-2 ${
+                  current === index ? 'border-blue-600' : 'border-transparent'
+                }`}
+              >
+                <Image
+                  src={thumb}
+                  alt={`Thumb ${index + 1}`}
+                  fill
+                  className="object-cover rounded-md"
+                />
+              </div>
+            ))}
           </div>
         )}
 
@@ -96,7 +124,7 @@ export default function ProjectModal({ project }: ProjectModalProps) {
           </div>
         )}
 
-        {/* Link al proyecto */}
+        {/* Link */}
         {project.link && (
           <div className="mt-6">
             <a

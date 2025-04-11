@@ -4,100 +4,123 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import ProjectModal from "@/components/ProjectModal";
-import { Project } from "@/types";
 import gsap from "gsap";
+import { Project } from "@/types";
+
+let ScrollTrigger: any; // 👈 definido fuera para uso global dentro del componente
 
 export default function ProjectsSection() {
   const t = useTranslations("Projects");
   const projects = t.raw("list") as Project[];
-  const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const sectionRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const loadAnimation = async () => {
-      const ScrollTrigger = (await import('gsap/ScrollTrigger')).ScrollTrigger
-      gsap.registerPlugin(ScrollTrigger)
-  
-      cardsRef.current.forEach((card) => {
-        if (!card) return
-  
-        gsap.fromTo(
-          card,
-          { opacity: 0, y: 50 },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 0.6,
-            ease: 'power2.out',
-            scrollTrigger: {
-              trigger: card,
-              start: 'top 80%',
-              toggleActions: 'play none none reset'
+      const module = await import("gsap/ScrollTrigger");
+      ScrollTrigger = module.ScrollTrigger;
+      gsap.registerPlugin(ScrollTrigger);
+
+      const items = sectionRef.current?.querySelectorAll(".project-item");
+
+      if (items) {
+        items.forEach((el, i) => {
+          const fromX = i % 2 === 0 ? -100 : 100;
+
+          gsap.fromTo(
+            el,
+            { opacity: 0, x: fromX },
+            {
+              opacity: 1,
+              x: 0,
+              duration: 0.8,
+              ease: "power2.out",
+              scrollTrigger: {
+                trigger: sectionRef.current,
+                start: "top bottom",
+                end: "bottom top",
+                toggleActions: "play none none reset",
+              },
             }
-          }
-        )
-      })
-    }
-  
-    loadAnimation()
-  
-    return () => {
-      if (typeof ScrollTrigger !== 'undefined') {
-        ScrollTrigger?.getAll().forEach((trigger) => trigger.kill())
+          );
+        });
       }
-    }
-  }, [])
-  
+    };
+
+    loadAnimation();
+
+    return () => {
+      if (typeof window !== "undefined" && ScrollTrigger) {
+        ScrollTrigger.getAll().forEach((trigger: any) => trigger.kill());
+      }
+    };
+  }, []);
 
   return (
-    <section className="w-full bg-white py-20 px-4 md:px-12" id="projects">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-5xl font-bold text-blue-900 mb-12 font-sans">
+    <section
+      className="w-full bg-white py-24 px-4 md:px-12 overflow-x-hidden"
+      id="projects"
+      ref={sectionRef}
+    >
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-20 text-center">
           {t("title")}
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {projects.map((project, idx) => (
-            <div
-              key={idx}
-              ref={(el) => {
-                cardsRef.current[idx] = el;
-              }}
-              className="flex flex-col items-center"
-            >
-              <Card className="hover:shadow-lg transition-shadow duration-300 border border-blue-100 flex flex-col items-center text-center">
-                <CardHeader className="w-full flex justify-center">
-                  <div className="relative w-24 h-24 mt-4">
-                    <Image
-                      src={project.image}
-                      alt={`${project.name} logo`}
-                      fill
-                      className="object-contain rounded-xl"
-                    />
-                  </div>
-                </CardHeader>
+        <div className="space-y-14">
+          {projects.map((project, idx) => {
+            const isRightImage = idx % 2 === 1;
 
-                <CardContent className="text-blue-700 space-y-4 px-4 pb-6 w-full">
-                  <CardTitle className="text-lg text-blue-800 font-semibold mt-2">
-                    {project.name}
-                  </CardTitle>
+            return (
+              <div
+                key={idx}
+                className={`project-item flex flex-row items-start gap-4 sm:gap-6 md:gap-10 ${
+                  idx % 2 === 1 ? "flex-row-reverse" : ""
+                }`}
+              >
+                {/* Imagen */}
+                <div className="relative w-[120px] h-[120px] sm:w-[100px] sm:h-[100px] md:w-[200px] md:h-[200px] rounded-lg overflow-hidden shadow-md shrink-0">
+                  <Image
+                    src={project.image}
+                    alt={project.name}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
 
-                  <p className="text-sm">{project.description}</p>
-
-                  <div className="flex flex-wrap justify-center gap-2">
-                    {project.stack?.map((tech, i) => (
-                      <span
-                        key={i}
-                        className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full font-medium"
-                      >
-                        {tech}
-                      </span>
-                    ))}
+                {/* Contenido */}
+                <div
+                  className={`w-full text-blue-900 space-y-4 md:pt-6 ${
+                    idx % 2 === 1 ? "md:w-[55%] md:ml-auto" : "md:w-1/2"
+                  }`}
+                >
+                  {/* Título */}
+                  <div className="inline-block relative">
+                    <h3 className="text-xl sm:text-2xl md:text-4xl font-semibold relative z-10">
+                      {project.name}
+                    </h3>
                   </div>
 
-                  <div className="flex flex-col items-center gap-2">
+                  <p className="text-sm sm:text-base md:text-xl text-blue-800">
+                    {project.description}
+                  </p>
+
+                  {project.stack && (
+                    <div className="flex flex-wrap gap-2">
+                      {project.stack.map((tech, i) => (
+                        <span
+                          key={i}
+                          className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Botones */}
+                  <div className="pt-2 flex gap-3 flex-wrap">
                     {project.link && (
                       <Link
                         href={project.link}
@@ -105,21 +128,19 @@ export default function ProjectsSection() {
                         rel="noopener noreferrer"
                       >
                         <Button
-                          size="sm"
                           variant="outline"
-                          className="text-blue-800 border-blue-200 hover:bg-blue-100"
+                          className="text-sm text-blue-800 border-blue-300 hover:bg-blue-100"
                         >
-                          Ver proyecto
+                          {t("viewProject")}
                         </Button>
                       </Link>
                     )}
-
                     <ProjectModal project={project} />
                   </div>
-                </CardContent>
-              </Card>
-            </div>
-          ))}
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
