@@ -81,12 +81,12 @@ export default function ProjectsSection() {
               >
                 {/* Imagen */}
                 <div className="relative w-[120px] h-[120px] sm:w-[100px] sm:h-[100px] md:w-[200px] md:h-[200px] rounded-lg overflow-hidden shadow-md shrink-0">
-                  <Image
-                    src={project.image}
-                    alt={project.name}
-                    fill
-                    className="object-contain"
-                  />
+                <Image
+                  src={project.image}
+                  alt={project.name}
+                  fill
+                  className="object-contain transition-transform duration-300 hover:scale-105"
+                />
                 </div>
 
                 {/* Contenido */}
