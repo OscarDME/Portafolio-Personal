@@ -48,11 +48,18 @@
       {
         "name": "VoluntRed",
         "description": "Platform connecting volunteers and NGOs. Built for social good.",
-        "details": "I developed both the frontend and backend of this platform to help NGOs manage volunteers and campaigns. Focused on accessibility and speed.",
+        "details": "I contributed to the development of both the frontend and backend of this platform to help NGOs manage volunteers and campaigns. Focused on accessibility and speed.",
         "role": "Full-stack developer",
         "stack": ["Next.js", "Firebase", "Tailwind", "Shadcn", "Flutter"],
         "image": "/projects/voluntred.png",
-        "gallery": ["/projects/voluntred-1.png", "/projects/voluntred-2.png"],
+        "gallery": [
+          "/projects/voluntred/image1.png",
+          "/projects/voluntred/image2.png",
+          "/projects/voluntred/image3.png",
+          "/projects/voluntred/image4.png",
+          "/projects/voluntred/image5.png",
+          "/projects/voluntred/image6.png"
+        ],
         "link": "https://www.voluntred.com/"
       },
       {
@@ -60,19 +67,50 @@
         "description": "Firmware, DevOps and device streaming for a security system startup.",
         "details": "Led the embedded systems development and cloud infrastructure for a scalable, real-time camera monitoring solution using ESP32-CAM and AWS.",
         "role": "Co-founder & engineer (firmware + cloud)",
-        "stack": ["ESP32", "AWS", "Docker", "ESP-IDF", "MQTT", "Node.js", "Express.js"],
+        "stack": [
+          "ESP32",
+          "AWS",
+          "Docker",
+          "ESP-IDF",
+          "MQTT",
+          "Node.js",
+          "Express.js"
+        ],
         "image": "/projects/eva.jpeg",
         "gallery": ["/projects/eva-1.png", "/projects/eva-2.png"],
         "link": "https://www.evaprotect.com/"
       },
       {
         "name": "Fithub",
-        "description": "Fitness tracking app in React Native, inspired by MyFitnessPal.",
-        "details": "Developed a mobile app to track calories, workouts, and weight progress. Local storage with SQLite for offline support.",
-        "role": "Mobile developer",
-        "stack": ["React Native", "Expo", "SQL Server", "NativeWind", "Azure", "React.js"],
+        "description": "Mobile app and web platform to create, share, and manage personalized fitness routines.",
+        "details": "Fithub is an all-in-one solution for fitness enthusiasts, trainers, and nutritionists. Users can create their own workout plans, track metrics such as weight, progress, and calories, and explore public routines shared by others. Trainers and nutritionists can assign custom training and diet plans to their clients. I developed both the mobile app (using React Native) and key parts of the backend, including local data management with SQLite and integration with cloud services.",
+        "role": "Mobile and backend developer",
+        "stack": [
+          "React Native",
+          "Expo",
+          "SQL Server",
+          "NativeWind",
+          "Azure",
+          "React.js"
+        ],
         "image": "/projects/fithub.png",
-        "gallery": ["/projects/fithub-1.png", "/projects/fithub-2.png"]
+        "gallery": [
+          "/projects/fithub/image1.jpg",
+          "/projects/fithub/image2.jpg",
+          "/projects/fithub/image3.jpg",
+          "/projects/fithub/image4.jpg",
+          "/projects/fithub/image5.jpg",
+          "/projects/fithub/image6.jpg",
+          "/projects/fithub/image7.jpg",
+          "/projects/fithub/image8.jpg",
+          "/projects/fithub/image9.jpg",
+          "/projects/fithub/image10.jpg",
+          "/projects/fithub/image11.jpg",
+          "/projects/fithub/image12.jpg",
+          "/projects/fithub/image13.jpg",
+          "/projects/fithub/image14.jpg"
+        ],
+        "link": "https://github.com/OscarDME/Mobile-and-Web-project"
       }
     ],
     "seeMore": "See more",
@@ -97,10 +135,24 @@
     ],
     "education": [
       {
-        "title": "Computer Engineering",
+        "title": "Software Development Technologist",
+        "institution": "Centro de Enseñanza Técnica Industrial (CETI) - Colomos Campus",
+        "year": "2020 - 2024"
+      },
+      {
+        "title": "Bachelor’s Degree in Computer Engineering",
         "institution": "CUCEI - University of Guadalajara",
-        "year": "2020 - Present"
+        "year": "2024 - Present"
       }
     ]
+  },
+  "Contact": {
+    "title": "Contact me",
+    "description": "Have an idea or project in mind? Let’s talk!",
+    "alsoReach": "You can also find me on",
+    "name": "Your name",
+    "email": "Your email",
+    "message": "Type your message here...",
+    "send": "Send message"
   }
 }

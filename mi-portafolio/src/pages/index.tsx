@@ -2,6 +2,7 @@ import { GetStaticPropsContext } from 'next'
 import HeroSection from '@/components/HeroSection'
 import ProjectSection from '@/components/ProjectSection'
 import AboutSection from '@/components/AboutSection'
+import ContactSection from '@/components/ContactSection'
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <HeroSection />
       <ProjectSection />
       <AboutSection />
+      <ContactSection />
     </>
   )
 }

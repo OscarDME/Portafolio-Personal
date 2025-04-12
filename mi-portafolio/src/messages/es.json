@@ -17,7 +17,7 @@
     "list": [
       {
         "name": "Nowya",
-        "description": "Plataforma de reservas tipo Airbnb para belleza, salud y mascotas.",
+        "description": "Plataforma B2B2C de reservas tipo Airbnb para belleza, salud y mascotas.",
         "details": "Nowya es un sistema B2B2C donde los usuarios pueden agendar citas en barberías, spas, consultorios médicos o veterinarias. Ofrece interfaces tanto para clientes como para negocios. Desarrollada con Next.js, Shadcn y Tailwind en frontend, y un backend con microservicios en NestJS. Implementa notificaciones por WhatsApp vía Twilio y corre sobre infraestructura AWS.",
         "role": "Desarrollador full-stack y co-founder (dev principal backend, DevOps y frontend de la plataforma administrativa)",
         "stack": [
@@ -48,11 +48,18 @@
       {
         "name": "VoluntRed",
         "description": "Plataforma que conecta voluntarios con ONGs. Creada con fines sociales.",
-        "details": "Desarrollé el frontend y backend para facilitar la gestión de campañas y voluntarios. Enfocada en accesibilidad y rendimiento.",
+        "details": "Fuí parte del desarrollo frontend y backend para facilitar la gestión de campañas y voluntarios. Enfocada en accesibilidad y rendimiento.",
         "role": "Desarrollador full-stack",
-        "stack": ["Next.js", "Firebase", "Tailwind", "Shadcn", "Framer Motion"],
+        "stack": ["Next.js", "Firebase", "Tailwind", "Shadcn", "Flutter"],
         "image": "/projects/voluntred.png",
-        "gallery": ["/projects/voluntred-1.png", "/projects/voluntred-2.png"],
+        "gallery": [
+          "/projects/voluntred/image1.png",
+          "/projects/voluntred/image2.png",
+          "/projects/voluntred/image3.png",
+          "/projects/voluntred/image4.png",
+          "/projects/voluntred/image5.png",
+          "/projects/voluntred/image6.png"
+        ],
         "link": "https://www.voluntred.com/"
       },
       {
@@ -60,19 +67,50 @@
         "description": "Firmware, DevOps y transmisión de dispositivos para una startup de seguridad.",
         "details": "Lideré el desarrollo de firmware y la infraestructura cloud para monitoreo en tiempo real con ESP32-CAM y AWS.",
         "role": "Cofundador e ingeniero (firmware + cloud)",
-        "stack": ["ESP32", "AWS", "Docker", "FFmpeg", "MQTT", "Node.js"],
+        "stack": [
+          "ESP32",
+          "AWS",
+          "Docker",
+          "ESP-IDF",
+          "MQTT",
+          "Node.js",
+          "Express.js"
+        ],
         "image": "/projects/eva.jpeg",
         "gallery": ["/projects/eva-1.png", "/projects/eva-2.png"],
         "link": "https://www.evaprotect.com/"
       },
       {
         "name": "Fithub",
-        "description": "App de seguimiento fitness en React Native, inspirada en MyFitnessPal.",
-        "details": "Desarrollé una app móvil para registrar calorías, entrenamientos y peso. Almacenamiento local con SQLite.",
-        "role": "Desarrollador móvil",
-        "stack": ["React Native", "Expo", "SQLite", "NativeWind"],
+        "description": "App móvil y plataforma web para crear, compartir y gestionar rutinas fitness personalizadas.",
+        "details": "Fithub es una solución integral para entusiastas del fitness, entrenadores y nutricionistas. Permite a los usuarios crear rutinas personalizadas de entrenamiento, registrar métricas como peso, progreso y calorías, y acceder a rutinas públicas creadas por otros usuarios. Además, los entrenadores pueden asignar planes personalizados de entrenamiento y alimentación a sus clientes. Desarrollé tanto la app móvil (con React Native) como partes clave del backend, incluyendo la gestión local de datos con SQLite y la integración con servicios en la nube.",
+        "role": "Desarrollador móvil y backend",
+        "stack": [
+          "React Native",
+          "Expo",
+          "SQL Server",
+          "NativeWind",
+          "Azure",
+          "React.js"
+        ],
         "image": "/projects/fithub.png",
-        "gallery": ["/projects/fithub-1.png", "/projects/fithub-2.png"]
+        "gallery": [
+          "/projects/fithub/image1.jpg",
+          "/projects/fithub/image2.jpg",
+          "/projects/fithub/image3.jpg",
+          "/projects/fithub/image4.jpg",
+          "/projects/fithub/image5.jpg",
+          "/projects/fithub/image6.jpg",
+          "/projects/fithub/image7.jpg",
+          "/projects/fithub/image8.jpg",
+          "/projects/fithub/image9.jpg",
+          "/projects/fithub/image10.jpg",
+          "/projects/fithub/image11.jpg",
+          "/projects/fithub/image12.jpg",
+          "/projects/fithub/image13.jpg",
+          "/projects/fithub/image14.jpg"
+        ],
+        "link": "https://github.com/OscarDME/Mobile-and-Web-project"
       }
     ],
     "seeMore": "Ver más",
@@ -97,10 +135,24 @@
     ],
     "education": [
       {
-        "title": "Ingeniería en Computación",
+        "title": "Tecnólogo en Desarrollo de Software",
+        "institution": "Centro de Enseñanza Técnica Industrial (CETI) - Plantel Colomos",
+        "year": "2020 - 2024"
+      },
+      {
+        "title": "Ingeniería en Informática",
         "institution": "CUCEI - Universidad de Guadalajara",
-        "year": "2020 - Actualidad"
+        "year": "2024 - Actualidad"
       }
     ]
+  },
+  "Contact": {
+    "title": "Contáctame",
+    "description": "¿Tienes una idea o proyecto en mente? ¡Hablemos!",
+    "alsoReach": "También puedes encontrarme en",
+    "name": "Tu nombre",
+    "email": "Tu correo",
+    "message": "Escribe tu mensaje aquí...",
+    "send": "Enviar mensaje"
   }
 }

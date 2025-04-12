@@ -34,7 +34,7 @@ export default function ProjectsSection() {
             {
               opacity: 1,
               x: 0,
-              duration: 0.8,
+              duration: 1.5,
               ease: "power2.out",
               scrollTrigger: {
                 trigger: sectionRef.current,
