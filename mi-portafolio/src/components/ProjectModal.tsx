@@ -143,7 +143,7 @@ export default function ProjectModal({ project }: ProjectModalProps) {
               rel="noopener noreferrer"
               className="text-sm text-blue-700 underline"
             >
-              Ir al proyecto →
+              {t('visitProject')}
             </a>
           </div>
         )}

@@ -1,7 +1,7 @@
 {
   "Home": {
     "title": "Hola, soy Oscar",
-    "subtitle": "Construyo cosas con código.",
+    "subtitle": "Transformo ideas en productos digitales.",
     "cta": "Ver proyectos",
     "scroll": "Desliza para explorar"
   },
@@ -66,7 +66,7 @@
         "name": "EVA Protect",
         "description": "Firmware, DevOps y transmisión de dispositivos para una startup de seguridad.",
         "details": "Lideré el desarrollo de firmware y la infraestructura cloud para monitoreo en tiempo real con ESP32-CAM y AWS.",
-        "role": "Cofundador e ingeniero (firmware + cloud)",
+        "role": "Ingeniero (firmware + cloud)",
         "stack": [
           "ESP32",
           "AWS",
@@ -77,7 +77,11 @@
           "Express.js"
         ],
         "image": "/projects/eva.jpeg",
-        "gallery": ["/projects/eva-1.png", "/projects/eva-2.png"],
+        "gallery": [
+          "/projects/eva/image1.jpg",
+          "/projects/eva/image2.png",
+          "/projects/eva/image3.jpg"
+        ],
         "link": "https://www.evaprotect.com/"
       },
       {
@@ -116,11 +120,11 @@
     "seeMore": "Ver más",
     "role": "Mi rol",
     "stack": "Tecnologías",
-    "visitProject": "Ir al proyecto"
+    "visitProject": "Ir al proyecto →"
   },
   "About": {
     "title": "Sobre mí",
-    "intro": "Soy un desarrollador apasionado por construir productos útiles con tecnología. Me gusta crear soluciones eficientes, escalables y centradas en el usuario.",
+    "intro": "Soy desarrollador con pasión por la tecnología, el emprendimiento y las startups. Disfruto crear productos digitales útiles, escalables y centrados en el usuario. Me motiva convertir ideas en soluciones reales que generen impacto.",
     "techTitle": "Stack tecnológico",
     "eduTitle": "Educación",
     "stack": [
@@ -131,6 +135,11 @@
       "React Native",
       "Docker",
       "PostgreSQL",
+      "SQL Server",
+      "Node.js",
+      "React.js",
+      "CSS",
+      "Linux",
       "AWS"
     ],
     "education": [

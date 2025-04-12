@@ -58,14 +58,14 @@ export default function HeroSection() {
           <p className="text-lg md:text-2xl text-blue-800">{t('subtitle')}</p>
 
           <div className="flex justify-center md:justify-start gap-4">
-            <Link href="/projects">
+            <a href="#projects">
               <Button
                 size="xl"
                 className="bg-blue-600 hover:bg-blue-700 text-white text-md"
               >
                 {t('cta')}
               </Button>
-            </Link>
+            </a>
           </div>
 
           {/* Redes sociales */}
