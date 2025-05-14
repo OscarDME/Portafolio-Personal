@@ -122,6 +122,30 @@
     "stack": "Tecnologías",
     "visitProject": "Ir al proyecto →"
   },
+  "MiniProjects": {
+    "title": "Mini Proyectos",
+    "subtitle": "Algunos proyectos más pequeños en los que he trabajado durante mi tiempo libre y para clientes específicos.",
+    "viewProject": "Ver Proyecto",
+    "viewDetails": "Detalles",
+    "list": [
+      {
+        "name": "Linkhub Express",
+        "description": "Solución para organizar y compartir colecciones de enlaces sin necesidad de autenticación.",
+        "image": "/projects/linkhub.png",
+        "stack": ["Next.js", "Tailwind CSS", "Shadcn"],
+        "link": "https://www.linkhubexpress.club/",
+        "details": "Linkhub es una plataforma que permite a los usuarios crear, organizar y compartir colecciones de enlaces de manera sencilla sin necesidad de crear una cuenta. Los usuarios pueden personalizar sus colecciones con diferentes temas y categorías, así como compartirlas mediante un enlace único. El proyecto fue creado con Next.js, estilizado con Tailwind CSS y componentes de Shadcn para una interfaz moderna y responsive."
+      },
+      {
+        "name": "Studio Fitness 333",
+        "description": "Panel de administración completo para un gimnasio con gestión de miembros, clases y pagos.",
+        "image": "/projects/studio333.jpg",
+        "stack": ["Next.js", "Tailwind CSS", "Shadcn", "Node.js", "PostgreSQL"],
+        "link": "https://www.333studiofitness.top/",
+        "details": "Desarrollé un sistema de administración completo para Studio Fitness 333, permitiendo al personal gestionar eficientemente los miembros del gimnasio, programar clases, realizar seguimiento de asistencia y procesar pagos. El frontend fue construido con Next.js, Tailwind CSS y componentes de Shadcn para una experiencia de usuario fluida, mientras que el backend utiliza Node.js con una base de datos PostgreSQL para almacenar y gestionar toda la información del negocio. El sistema incluye funcionalidades como generación de reportes, envío de recordatorios automáticos y análisis de métricas de asistencia."
+      }
+    ]
+  },
   "About": {
     "title": "Sobre mí",
     "intro": "Soy desarrollador con pasión por la tecnología, el emprendimiento y las startups. Disfruto crear productos digitales útiles, escalables y centrados en el usuario. Me motiva convertir ideas en soluciones reales que generen impacto.",

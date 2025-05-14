@@ -122,6 +122,62 @@
     "stack": "Stack",
     "visitProject": "Visit project →"
   },
+  "MiniProjects": {
+    "title": "Mini Projects",
+    "subtitle": "Some smaller projects I've worked on during my free time and for specific clients.",
+    "viewProject": "View Project",
+    "viewDetails": "Details",
+    "list": [
+      {
+        "name": "Linkhub Express",
+        "description": "Solution for organizing and sharing link collections without authentication requirements.",
+        "image": "/projects/linkhub.png",
+        "stack": ["Next.js", "Tailwind CSS", "Shadcn"],
+        "link": "https://www.linkhubexpress.club/",
+        "details": "Linkhub is a platform that allows users to create, organize, and share collections of links easily without needing to create an account. Users can customize their collections with different themes and categories, and share them through a unique link. The project was built with Next.js, styled with Tailwind CSS, and uses Shadcn components for a modern and responsive interface."
+      },
+      {
+        "name": "Studio Fitness 333",
+        "description": "Complete administration panel for a gym with member, class, and payment management.",
+        "image": "/projects/studio333.jpg",
+        "stack": ["Next.js", "Tailwind CSS", "Shadcn", "Node.js", "PostgreSQL"],
+        "link": "https://www.333studiofitness.top/",
+        "details": "I developed a complete management system for Studio Fitness 333, allowing staff to efficiently manage gym members, schedule classes, track attendance, and process payments. The frontend was built with Next.js, Tailwind CSS, and Shadcn components for a smooth user experience, while the backend uses Node.js with a PostgreSQL database to store and manage all business information. The system includes features such as report generation, automatic reminder sending, and attendance metrics analysis."
+      },
+      {
+        "name": "React Calculator",
+        "description": "An interactive calculator built with React and TypeScript with advanced functionalities.",
+        "image": "/projects/calculator.jpg",
+        "stack": ["React", "TypeScript", "CSS"],
+        "link": "https://github.com/OscarDME/react-calculator",
+        "details": "This calculator was created as a practice project to improve my skills with React and TypeScript. It includes features such as basic operations, memory, calculation history, and a responsive design."
+      },
+      {
+        "name": "Tasks API",
+        "description": "A RESTful API for task management with authentication and authorization.",
+        "image": "/projects/tasks-api.jpg",
+        "stack": ["Node.js", "Express", "MongoDB", "JWT"],
+        "link": "https://github.com/OscarDME/tasks-api",
+        "details": "I developed this API as part of a personal project to practice backend development. It implements complete CRUD operations, JWT authentication, data validation, and MongoDB connection."
+      },
+      {
+        "name": "Memory Game",
+        "description": "A classic memory game built with HTML, CSS, and vanilla JavaScript.",
+        "image": "/projects/memory-game.jpg",
+        "stack": ["JavaScript", "HTML", "CSS"],
+        "link": "https://github.com/OscarDME/memory-game",
+        "details": "I developed this game as a personal project to practice DOM manipulation and game logic in JavaScript. It includes features such as a timer, move counter, and various difficulty levels."
+      },
+      {
+        "name": "Discord Bot",
+        "description": "A Discord bot with custom commands and interactive functionalities.",
+        "image": "/projects/discord-bot.jpg",
+        "stack": ["Node.js", "Discord.js", "MongoDB"],
+        "link": "https://github.com/OscarDME/discord-bot",
+        "details": "I developed this bot to learn about the Discord API and create a useful tool for my servers. It includes moderation commands, integration with external APIs, and a user experience system."
+      }
+    ]
+  },
   "About": {
     "title": "About me",
     "intro": "I'm a developer passionate about technology, entrepreneurship, and startups. I enjoy building useful, scalable, and user-centered digital products. I'm driven by turning ideas into real solutions that create impact.",

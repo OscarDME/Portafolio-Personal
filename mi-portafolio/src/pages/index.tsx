@@ -3,12 +3,14 @@ import HeroSection from '@/components/HeroSection'
 import ProjectSection from '@/components/ProjectSection'
 import AboutSection from '@/components/AboutSection'
 import ContactSection from '@/components/ContactSection'
+import MiniProjectsSection from '@/components/MiniProjectsSection'
 
 export default function Home() {
   return (
     <>
       <HeroSection />
       <ProjectSection />
+      <MiniProjectsSection />
       <AboutSection />
       <ContactSection />
     </>
